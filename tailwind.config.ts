@@ -63,6 +63,7 @@ export default {
 				'blq-gray-300': '#92939E',
 				'blq-gray-400': '#242528',
 				'blq-purple-100': '#533EE8',
+				'blq-yellow-100': '#E4F222',
 				"toast-red-100": "#FC2838",
 				"toast-green-100": "#00C46C",
 			},

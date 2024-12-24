@@ -104,7 +104,7 @@ body {
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border font-creato;
   }
   body {
     @apply bg-background text-foreground;
@@ -113,16 +113,14 @@ body {
 
 @layer components {
 	.side-pad {
-		@apply px-7 lg:px-16;
+		@apply px-7 lg:px-20;
 	}
 
   .bred {
 		@apply border border-red-500;
 	}
 
-  .newsletter-section {
-  background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-  }
+      .flexed {
+		@apply flex items-center justify-center;
+	}
 }
