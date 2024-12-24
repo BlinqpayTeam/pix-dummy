@@ -2,10 +2,12 @@
 'use client';
 import React, { useState } from 'react'
 import BlinqButton from '@/components/ui/BlinqButton';
+import useToolkit from '@/utils/hooks/useToolkit';
 
 
 const NewsLetters = () => {
    const [email, setEmail] = useState('');
+   const { toastError, toastSuccess } = useToolkit();
 
    const isValidEmail = (email: string) => {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -13,12 +15,16 @@ const NewsLetters = () => {
    };
 
    const handleSubscription = () => {
-      // 
+      if (!isValidEmail(email)) {
+         toastError('Please enter a valid email')
+      } else {
+         toastSuccess('Dummy toast message')
+      }
    }
 
 
    return (
-      <div className='relative text-white flex items-center justify-center flex-col font-creato side-pad h-[450px] lg:h-[800px]'>
+      <div className='relative text-white flex items-center justify-center flex-col font-creato h-[450px] lg:h-[800px]'>
 
          <img
             className='absolute'
@@ -51,7 +57,6 @@ const NewsLetters = () => {
                <div className="hidden lg:block">
                   <BlinqButton
                      text="Sign Up"
-                     disabled={!isValidEmail(email)}
                      onClick={handleSubscription}
                   />
                </div>
@@ -61,7 +66,6 @@ const NewsLetters = () => {
                <BlinqButton
                   fullWidth
                   text="Sign Up"
-                  disabled={!isValidEmail(email)}
                   onClick={handleSubscription}
                />
             </div>

@@ -60,7 +60,11 @@ export default {
 				'blq-gray-100': '#666666',
 				'blq-gray-200': '#F7F7F7',
 				'blq-gray-250': '#CDCBD7',
+				'blq-gray-300': '#92939E',
+				'blq-gray-400': '#242528',
 				'blq-purple-100': '#533EE8',
+				"toast-red-100": "#FC2838",
+				"toast-green-100": "#00C46C",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -69,6 +73,7 @@ export default {
 			},
 			fontSize: {
 				"plg": '14px',
+				"slg": '16px',
 			},
 			fontFamily: {
 				'creato': ['Creato Display', 'sans-serif'],
