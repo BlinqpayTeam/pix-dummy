@@ -1,6 +1,6 @@
 const Banner = () => {
     return (
-        <div className="bg-darkBlue py-6">
+        <div className="bg-darkBlue bg-opacity-40 py-6">
             <p className="text-center text-sm font-medium text-white">
                 <span className="bg-lightGreen rounded-lg p-2 rounded-[40%] mr-2 text-black">New</span>
                 Introducing Qwid, our cross border payment platform. <span className="underline">Sign up</span> now

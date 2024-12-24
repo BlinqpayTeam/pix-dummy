@@ -11,6 +11,7 @@ export default {
   	extend: {
 		  colors: {
 			lightGreen: '#F0FF1C',
+			lightBlue: '#1D1D2066',
 			darkBlue: '#01010F',
 			mediumBlue: '#6939FF',
 			deepBlue: '#533EE8',
