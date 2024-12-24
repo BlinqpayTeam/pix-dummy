@@ -119,4 +119,10 @@ body {
   .bred {
 		@apply border border-red-500;
 	}
+
+  .newsletter-section {
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+  }
 }

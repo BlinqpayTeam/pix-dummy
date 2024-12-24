@@ -57,6 +57,10 @@ export default {
 				},
 				'blq-custom-dark': '#01010E',
 				'blq-gray-50': '#999999',
+				'blq-gray-100': '#666666',
+				'blq-gray-200': '#F7F7F7',
+				'blq-gray-250': '#CDCBD7',
+				'blq-purple-100': '#533EE8',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
