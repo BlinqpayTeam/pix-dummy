@@ -1,7 +1,7 @@
 import Banner from "@/components/Banner";
 import HeroSectionMenu from "@/components/Hero-section";
 import HeroSection from "@/components/Hero-section/section";
-import SecondHalfSectionsWrapper from "@/components/second-half-sections/SecondHalfSectionsWrapper";
+import SecondHalfSectionsWrapper from "@/components/landing-page/second-half-sections/SecondHalfSectionsWrapper";
 
 const menu = ["Company", "Products", "Developers", "About us"]
 

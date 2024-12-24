@@ -6,3 +6,8 @@ type FooterAddressProps = {
    value?: string,
    children?: FooterLinkProps[];
 }
+
+type UsefulLinkProps = {
+   title: string;
+   children?: FooterLinkProps[];
+}

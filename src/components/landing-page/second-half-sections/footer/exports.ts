@@ -31,6 +31,43 @@ const addresses: FooterAddressProps[] = [
    },
 ]
 
+const usefulLinks: UsefulLinkProps[] = [
+   {
+      title: 'Company',
+      children: [
+         { subtitle: 'About us', url: '#' },
+         { subtitle: 'The Team', url: '#' },
+         { subtitle: 'Careers', url: '#' },
+      ]
+   },
+   {
+      title: 'Products',
+      children: [
+         { subtitle: 'Blinqcheckout', url: '#' },
+         { subtitle: 'Blinqchat', url: '#' },
+         { subtitle: 'Qwid', url: '#' },
+         { subtitle: 'ZAP', url: '#' },
+      ]
+   },
+   {
+      title: 'Developers',
+      children: [
+         { subtitle: 'Guides', url: '#' },
+         { subtitle: 'Changelog', url: '#' },
+         { subtitle: 'API Docs', url: '#' },
+      ]
+   },
+   {
+      title: 'Support',
+      children: [
+         { subtitle: 'Contact us', url: '#' },
+         { subtitle: 'FAQs', url: '#' },
+         { subtitle: 'Blog', url: '#' },
+      ]
+   },
+]
+
 export {
-   addresses
+   addresses,
+   usefulLinks
 }

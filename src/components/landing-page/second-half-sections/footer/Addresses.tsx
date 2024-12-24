@@ -12,13 +12,13 @@ const Addresses = () => {
             const isNig = address?.title === 'Nigeria'
 
             return (
-               <div key={idx} className="w-full lg:w-[28%] flex items-start lg:mr-12 mb-8 lg:mb-8">
+               <div key={idx} className="w-full lg:w-[28%] flex !items-start lg:mr-12 mb-8 lg:mb-8">
 
                   <div className={`mr-3 ${isNig ? '' : 'pt-px'}`}>
                      <Image
                         height={20}
-                        width={isNig ? 35 : 33}
                         alt="footer-img"
+                        width={isNig ? 35 : 25}
                         src={address.iconPath}
                      />
                   </div>

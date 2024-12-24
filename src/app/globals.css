@@ -113,7 +113,7 @@ body {
 
 @layer components {
 	.side-pad {
-		@apply px-7 lg:px-20;
+		@apply px-7 lg:px-16;
 	}
 
   .bred {
