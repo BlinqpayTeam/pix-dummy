@@ -15,6 +15,10 @@ export default {
 				darkBlue: '#01010F',
 				mediumBlue: '#6939FF',
 				deepBlue: '#533EE8',
+				textColor: '#92939E',
+				darkGreen: '#E4F222',
+				cardBg: '#242528',
+				primaryColor: '#03010b',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {

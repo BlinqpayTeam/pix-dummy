@@ -1,30 +1,28 @@
 import Banner from "@/components/Banner";
+import Features from "@/components/features";
+import Frames from "@/components/frames";
+import HeroSection from "@/components/Hero-section";
 import HeroSectionMenu from "@/components/Hero-section";
-import HeroSection from "@/components/Hero-section/section";
-<<<<<<< HEAD
-<<<<<<< HEAD
 import SecondHalfSectionsWrapper from "@/components/landing-page/second-half-sections/SecondHalfSectionsWrapper";
-=======
-<<<<<<< HEAD
-import SecondHalfSectionsWrapper from "@/components/second-half-sections/SecondHalfSectionsWrapper";
-=======
-import Image from "next/image";
->>>>>>> 5abec7e (update)
->>>>>>> ea67848 (firs)
-=======
-import SecondHalfSectionsWrapper from "@/components/second-half-sections/SecondHalfSectionsWrapper";
->>>>>>> 665ebe4 (firs)
+import Partner from "@/components/partner";
+import Slider from "@/components/slider";
+
 
 const menu = ["Company", "Products", "Developers", "About us"]
-
+//'bg-gradient-to-tr from-darkBlue from-60% via-mediumBlue to-darkBlue lg:bg-[center_top_-208px]
+const banks = ["Nigeria", "United States", "United Kingdom", "Canada", "China", "Europe", "Turkey", "Kenya"]
 export default function Home() {
   return (
-    <section>
+    <section className="bg-primaryColor bg-[url('/images/bg.png')] bg-contain bg-no-repeat bg-[center_top_-206px]">
 
-      <div className='bg-gradient-to-tr from-darkBlue from-60% via-mediumBlue to-darkBlue'>
+      <div>
         <Banner />
         <HeroSectionMenu menus={menu} />
-        <HeroSection />
+        <HeroSection menus={menu} />
+        <Slider banks={banks} />
+        <Partner />
+        <Features />
+        <Frames />
       </div>
 
       <SecondHalfSectionsWrapper />

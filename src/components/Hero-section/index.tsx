@@ -8,9 +8,9 @@ type Props = {
 
 const HeroSectionMenu = ({menus}: Props) => {
   return (
-      <div className='flex justify-between items-center px-20 py-10'>
+      <div className='flex justify-between items-center px-5 py-5 lg:px-20 lg:py-10'>
           <Image src="/logo/blinqpay.svg" alt="logo" width={82} height={18} />
-          <NavigationMenu>
+          <NavigationMenu className='hidden lg:block'>
               <NavigationMenuList>
                   {menus.map(menu => (
                       menu.toLowerCase() === "products" ? <NavigationMenuItem key={menu} className='text-white bg-transparent  hover:bg-transparent'>
