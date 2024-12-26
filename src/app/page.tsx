@@ -1,7 +1,15 @@
 import Banner from "@/components/Banner";
 import HeroSectionMenu from "@/components/Hero-section";
 import HeroSection from "@/components/Hero-section/section";
+<<<<<<< HEAD
 import SecondHalfSectionsWrapper from "@/components/landing-page/second-half-sections/SecondHalfSectionsWrapper";
+=======
+<<<<<<< HEAD
+import SecondHalfSectionsWrapper from "@/components/second-half-sections/SecondHalfSectionsWrapper";
+=======
+import Image from "next/image";
+>>>>>>> 5abec7e (update)
+>>>>>>> ea67848 (firs)
 
 const menu = ["Company", "Products", "Developers", "About us"]
 
