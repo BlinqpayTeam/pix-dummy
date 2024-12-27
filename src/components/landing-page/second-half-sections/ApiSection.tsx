@@ -14,12 +14,12 @@ const ApiSection = () => {
    ]
 
    return (
-      <div className='bg-blg-dark-200 text-white py-20 flex items-center justify-center flex-col side-pad'>
+      <div className='bg-blg-dark-200 text-white pb-20 pt-10 flex items-center justify-center flex-col side-pad'>
 
          <SectionLabel text="APIs" />
 
          <p className="my-5 lg:my-7 text-3xl leading-10 lg:leading-[50px] lg:text-[38px] font-medium text-center">
-            Got a Startup Idea? <br /> We Got What You <br /> Need
+            Got a Startup Idea? <br /> We&#39;ve Got What You <br /> Need
          </p>
 
          <div className="text-blq-gray-300 text-plg lg:text-slg mb-8 lg:mb-12 text-center">

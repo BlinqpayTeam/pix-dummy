@@ -57,6 +57,7 @@ export default {
 				},
 				'blg-dark-100': '#01010E',
 				'blg-dark-200': '#020202',
+				'blg-dark-300': '#0A0A0A',
 				'blq-gray-50': '#999999',
 				'blq-gray-100': '#666666',
 				'blq-gray-200': '#F7F7F7',
