@@ -1,4 +1,4 @@
-const addresses: FooterAddressProps[] = [
+const footerAddresses: FooterAddressProps[] = [
    {
       title: 'Nigeria',
       iconPath: '/images/footer/nigeria.svg',
@@ -21,7 +21,7 @@ const addresses: FooterAddressProps[] = [
    },
    {
       title: 'Social Media',
-      iconPath: '/images/footer/media.svg',
+      iconPath: '',
       children: [
          { subtitle: 'Facebook', url: 'https://www.facebook.com/Blinqpay-112739471078828/?_rdc=2&_rdr' },
          { subtitle: 'Instagram', url: 'https://www.instagram.com/blinqpayapp/' },
@@ -31,6 +31,43 @@ const addresses: FooterAddressProps[] = [
    },
 ]
 
+const footerUsefulLinks: UsefulLinkProps[] = [
+   {
+      title: 'Company',
+      children: [
+         { subtitle: 'About us', url: '#' },
+         { subtitle: 'The Team', url: '#' },
+         { subtitle: 'Careers', url: '#' },
+      ]
+   },
+   {
+      title: 'Products',
+      children: [
+         { subtitle: 'Blinqcheckout', url: '#' },
+         { subtitle: 'Blinqchat', url: '#' },
+         { subtitle: 'Qwid', url: '#' },
+         { subtitle: 'ZAP', url: '#' },
+      ]
+   },
+   {
+      title: 'Developers',
+      children: [
+         { subtitle: 'Guides', url: '#' },
+         { subtitle: 'Changelog', url: '#' },
+         { subtitle: 'API Docs', url: '#' },
+      ]
+   },
+   {
+      title: 'Support',
+      children: [
+         { subtitle: 'Contact us', url: '#' },
+         { subtitle: 'FAQs', url: '#' },
+         { subtitle: 'Blog', url: '#' },
+      ]
+   },
+]
+
 export {
-   addresses
+   footerAddresses,
+   footerUsefulLinks
 }

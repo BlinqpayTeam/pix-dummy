@@ -55,8 +55,18 @@ export default {
 					'4': 'hsl(var(--chart-4))',
 					'5': 'hsl(var(--chart-5))'
 				},
-				'blq-custom-dark': '#01010E',
+				'blg-dark-100': '#01010E',
+				'blg-dark-200': '#020202',
 				'blq-gray-50': '#999999',
+				'blq-gray-100': '#666666',
+				'blq-gray-200': '#F7F7F7',
+				'blq-gray-250': '#CDCBD7',
+				'blq-gray-300': '#92939E',
+				'blq-gray-400': '#242528',
+				'blq-purple-100': '#533EE8',
+				'blq-yellow-100': '#E4F222',
+				"toast-red-100": "#FC2838",
+				"toast-green-100": "#00C46C",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -65,11 +75,13 @@ export default {
 			},
 			fontSize: {
 				"plg": '14px',
+				"slg": '16px',
 			},
 			fontFamily: {
 				'creato': ['Creato Display', 'sans-serif'],
 			},
 		}
 	},
+	// eslint-disable-next-line @typescript-eslint/no-require-imports
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;

@@ -1,30 +1,33 @@
 import React from 'react'
-import { addresses } from './exports'
+import { footerAddresses } from '../exports'
 import Image from 'next/image'
 import OptionalView from '@/components/ui/OptionalView'
 
 const Addresses = () => {
    return (
       <div className="w-full flex items-start justify-start flex-wrap">
-         {addresses.map((address: FooterAddressProps, idx: number) => {
+         {footerAddresses.map((address: FooterAddressProps, idx: number) => {
 
-            const isSocials = address?.title?.includes('Social')
-            const isNig = address?.title === 'Nigeria'
+            const isSocials = address?.title?.includes('Social');
+            const isNig = address?.title === 'Nigeria';
+            const hasValidIcon = address?.iconPath?.length > 0;
 
             return (
-               <div key={idx} className="w-full lg:w-[28%] flex items-start lg:mr-12 mb-8 lg:mb-8">
+               <div key={idx} className="w-full lg:w-[28%] flex !items-start lg:mr-12 mb-8 lg:mb-8">
 
-                  <div className={`mr-3 ${isNig ? '' : 'pt-px'}`}>
-                     <Image
-                        height={20}
-                        width={isNig ? 35 : 33}
-                        alt="footer-img"
-                        src={address.iconPath}
-                     />
-                  </div>
+                  <OptionalView condition={hasValidIcon}>
+                     <div className={`${isNig ? '' : 'pt-px'}`}>
+                        <Image
+                           height={20}
+                           alt="footer-img"
+                           width={isNig ? 35 : 25}
+                           src={address.iconPath}
+                        />
+                     </div>
+                  </OptionalView>
 
-                  <div>
-                     <p className="mb-1 text-white pb-1 font-semibold">{address.title}</p>
+                  <div className={`${hasValidIcon ? 'ml-3' : 'ml-9'}`}>
+                     <p className="mb-1 text-white pb-1 font-semibold ml-3s">{address.title}</p>
 
                      <OptionalView condition={!isSocials}>
                         <p className="text-sm lg:text-plg text-blq-gray-50 font-normal">{address.value}.</p>
