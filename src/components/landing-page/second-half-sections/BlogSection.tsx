@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 import React, { useEffect } from 'react'
 import SectionLabel from '@/components/ui/SectionLabel'
@@ -52,7 +51,7 @@ const BlogSection = () => {
          <OptionalView condition={!blogsLoading && blogs?.length > 0}>
 
             <div className="flex items-center justify-center lg:justify-between flex-wrap lg:flex-nowrap pt-8 lg:pt-12">
-               {blogs?.map((blog: any, idx: number) => {
+               {blogs?.map((blog: QwidBlogType, idx: number) => {
                   const { image, title, author, readTime, createdAt, id, summary } = blog;
 
                   return (
@@ -87,7 +86,7 @@ const BlogSection = () => {
                         </div>
 
                         <p className="font-medium text-lg lg:text-[20px]">
-                           {title}
+                           {title?.substring(0, 50)}...
                         </p>
 
                         <p className="text-blq-gray-300 text-sm lg:text-slg mt-3">

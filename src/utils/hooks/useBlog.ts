@@ -13,8 +13,15 @@ const useBlog = () => {
    const fetchBlogs = async () => {
       setBlogsLoading(true);
       try {
-         const data = await sendApiRequest(`${baseUrl}active?perPage=3&page=1`, 'GET');
-         setBlogs(data?.posts);
+         const data = await sendApiRequest(`${baseUrl}active?perPage=100&page=1`, 'GET');
+
+         const sortedItems = data?.posts?.sort((a: QwidBlogType, b: QwidBlogType) => {
+            const dateA = new Date(parseInt(a.createdAt)).getTime();
+            const dateB = new Date(parseInt(b.createdAt)).getTime();
+            return dateA - dateB;
+         });
+
+         setBlogs(sortedItems?.slice(-3));
       } catch (error) {
          handleRequestError(error);
       }
@@ -31,20 +38,3 @@ const useBlog = () => {
 }
 
 export default useBlog;
-
-// const tampa = {
-//    "title": "Sending money abroad from Nigeria: A simple 5-step guide with Qwid",
-
-//    "author": "Beloved Moses",
-//    "image": "https://vebuxe-assets.s3.eu-west-2.amazonaws.com/WhatsApp+Image+2023-08-24+at+6.19.22+PM.jpeg",
-//    "readTime": "4 mins read time",
-//    "summary": "For anyone in Nigeria looking to send money overseas, it can be a bit of a puzzle, whether it's for school fees, medical expenses.",
-//    "status": "active",
-//    "tags": [
-//       "Personal Finance"
-//    ],
-//    "createdAt": "2023-08-24T12:01:21.859Z",
-//    "updatedAt": "2023-08-24T12:01:21.859Z",
-//    "version": 0,
-//    "id": "64e74691eb8e584abc93153a"
-// }

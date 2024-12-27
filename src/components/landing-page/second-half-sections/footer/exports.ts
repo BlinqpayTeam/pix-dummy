@@ -21,7 +21,7 @@ const addresses: FooterAddressProps[] = [
    },
    {
       title: 'Social Media',
-      iconPath: '/images/footer/media.svg',
+      iconPath: '',
       children: [
          { subtitle: 'Facebook', url: 'https://www.facebook.com/Blinqpay-112739471078828/?_rdc=2&_rdr' },
          { subtitle: 'Instagram', url: 'https://www.instagram.com/blinqpayapp/' },
