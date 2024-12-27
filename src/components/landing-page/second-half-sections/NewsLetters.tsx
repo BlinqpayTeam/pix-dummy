@@ -32,7 +32,7 @@ const NewsLetters = () => {
             src="/images/landing-page/newsletter-bg.png" alt="newsletters-bg"
          />
 
-         <div className="z-20">
+         <div className="z-20 px-5 lg:px-0">
 
             <div className="text-center pb-7 lg:pb-10">
                <p className="mb-3 text-3xl leading-snug lg:text-3xl font-semibold">

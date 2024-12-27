@@ -39,7 +39,7 @@ const ApiSection = () => {
          <div className="flex items-center justify-center lg:justify-between flex-wrap pt-8 lg:pt-12 space-y-10 lg:space-y-20">
             {apiShots.map((item: string, idx: number) => {
 
-               const allowButton = idx === 1 || idx === 2;
+               const allowButton = idx < 3;
 
                return (
                   <div key={idx} className={`h-[300px] lg:h-[380px] w-full relative ${allowButton ? 'lg:w-[47%]' : 'lg:w-[53%]'}`}>
