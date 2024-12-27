@@ -1,11 +1,12 @@
 import Banner from "@/components/Banner";
 import Features from "@/components/features";
 import Frames from "@/components/frames";
-import HeroSection from "@/components/Hero-section";
+import HeroSection from "@/components/Hero-section/section";
 import HeroSectionMenu from "@/components/Hero-section";
 import SecondHalfSectionsWrapper from "@/components/landing-page/second-half-sections/SecondHalfSectionsWrapper";
 import Partner from "@/components/partner";
 import Slider from "@/components/slider";
+import DownloadSection from "@/components/download-section";
 
 
 const menu = ["Company", "Products", "Developers", "About us"]
@@ -18,11 +19,12 @@ export default function Home() {
       <div>
         <Banner />
         <HeroSectionMenu menus={menu} />
-        <HeroSection menus={menu} />
+        <HeroSection />
         <Slider banks={banks} />
         <Partner />
         <Features />
         <Frames />
+        <DownloadSection />
       </div>
 
       <SecondHalfSectionsWrapper />
