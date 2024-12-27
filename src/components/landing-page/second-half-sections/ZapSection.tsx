@@ -32,7 +32,7 @@ const ZapSection = () => {
    ]
 
    return (
-      <div className="w-full zap-section-overlay bred relative lg:bg-contain bg-no-repeat text-white">
+      <div className="w-full zap-section-overlay relative lg:bg-contain bg-no-repeat text-white">
 
          <div className="absolute top-20 lg:top-28 w-full mx-auto flexed flex-col px-4 lg:px-0">
             <SectionLabel text="ZAP" />

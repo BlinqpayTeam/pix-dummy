@@ -120,7 +120,7 @@ body {
 		@apply border border-red-500;
 	}
 
-      .flexed {
+  .flexed {
 		@apply flex items-center justify-center;
 	}
 
