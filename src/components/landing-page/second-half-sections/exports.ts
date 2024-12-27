@@ -1,4 +1,4 @@
-const addresses: FooterAddressProps[] = [
+const footerAddresses: FooterAddressProps[] = [
    {
       title: 'Nigeria',
       iconPath: '/images/footer/nigeria.svg',
@@ -31,7 +31,7 @@ const addresses: FooterAddressProps[] = [
    },
 ]
 
-const usefulLinks: UsefulLinkProps[] = [
+const footerUsefulLinks: UsefulLinkProps[] = [
    {
       title: 'Company',
       children: [
@@ -68,6 +68,6 @@ const usefulLinks: UsefulLinkProps[] = [
 ]
 
 export {
-   addresses,
-   usefulLinks
+   footerAddresses,
+   footerUsefulLinks
 }

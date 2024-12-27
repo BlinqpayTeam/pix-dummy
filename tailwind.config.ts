@@ -55,7 +55,8 @@ export default {
 					'4': 'hsl(var(--chart-4))',
 					'5': 'hsl(var(--chart-5))'
 				},
-				'blq-custom-dark': '#01010E',
+				'blg-dark-100': '#01010E',
+				'blg-dark-200': '#020202',
 				'blq-gray-50': '#999999',
 				'blq-gray-100': '#666666',
 				'blq-gray-200': '#F7F7F7',

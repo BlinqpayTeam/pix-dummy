@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { usefulLinks } from './exports'
+import { footerUsefulLinks } from '../exports'
 import TermsAndPolicy from './TermsAndPolicy'
 
 const UsefulLinks = () => {
@@ -18,7 +18,7 @@ const UsefulLinks = () => {
             </div>
 
             <div className="w-full lg:w-[40%] flex items-start justify-between flex-wrap lg:flex-nowrap pt-10 lg:pt-0">
-               {usefulLinks.map(({ title, children }: UsefulLinkProps) => {
+               {footerUsefulLinks.map(({ title, children }: UsefulLinkProps) => {
 
                   return (
                      <div key={title} className="w-[45%] lg:w-[23%] mb-8 lg:mb-0">

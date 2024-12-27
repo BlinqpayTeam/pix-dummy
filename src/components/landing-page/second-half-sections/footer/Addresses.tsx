@@ -1,12 +1,12 @@
 import React from 'react'
-import { addresses } from './exports'
+import { footerAddresses } from '../exports'
 import Image from 'next/image'
 import OptionalView from '@/components/ui/OptionalView'
 
 const Addresses = () => {
    return (
       <div className="w-full flex items-start justify-start flex-wrap">
-         {addresses.map((address: FooterAddressProps, idx: number) => {
+         {footerAddresses.map((address: FooterAddressProps, idx: number) => {
 
             const isSocials = address?.title?.includes('Social');
             const isNig = address?.title === 'Nigeria';

@@ -16,7 +16,7 @@ const BlogSection = () => {
    }, [])
 
    return (
-      <div className='bg-blq-custom-dark text-white py-5'>
+      <div className='bg-blg-dark-100 side-pad text-white py-5'>
 
          <div className="w-full lg:w-2/5 flex items-center justify-center lg:items-start flex-col">
 
@@ -65,13 +65,6 @@ const BlogSection = () => {
 
                         <div className='py-4'>
                            <div className="flex items-start">
-
-                              <img
-                                 width={45}
-                                 alt="author"
-                                 className='mr-2'
-                                 src='/images/landing-page/santa.svg'
-                              />
 
                               <div>
                                  <p className="mb-2 text-sm lg:text-slg">{author}</p>
