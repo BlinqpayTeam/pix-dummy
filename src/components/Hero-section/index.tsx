@@ -2,6 +2,8 @@ import { cn } from '@/lib/utils'
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '../ui/navigation-menu'
 import Image from 'next/image'
 import Link from 'next/link'
+// import { slide as Menu } from 'react-burger-menu'
+
 
 type Props = {
     menus: Array<string>
@@ -41,7 +43,11 @@ const HeroSectionMenu = ({menus}: Props) => {
       </NavigationMenuList>
           </NavigationMenu>
           
-        <div/>
+      <div />
+      <div className='lg:hidden'>
+        <Image src="/images/menu.svg" alt="menu" width={24} height={24} />
+        </div>
+
     </div>
   )
 }
