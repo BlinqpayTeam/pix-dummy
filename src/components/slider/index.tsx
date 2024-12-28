@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Autoplay from "embla-carousel-autoplay"
+//import Autoplay from "embla-carousel-autoplay"
 import Image from 'next/image'
 import Marquee from "react-fast-marquee";
 
@@ -9,10 +9,7 @@ type Props = {
 }
 
 const Slider = ({ banks }: Props) => {
-    const plugin = React.useRef(
-        Autoplay({ delay: 2000, stopOnInteraction: false })
-    )
-    
+   
   return (
       <div className='flex justify-center items-center py-[50px]'>
            <Marquee>

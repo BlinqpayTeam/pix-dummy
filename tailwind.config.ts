@@ -86,6 +86,11 @@ export default {
 			},
 		}
 	},
+	safelist: [
+		'!duration-[0ms]',
+		'!delay-[0ms]',
+		'html.js :where([class*="taos:"]:not(.taos-init))'
+	  ],
 	// eslint-disable-next-line @typescript-eslint/no-require-imports
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"), require('taos/plugin')],
 } satisfies Config;

@@ -1,9 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-type Props = {}
-
-const DownloadSection = (props: Props) => {
+const DownloadSection = () => {
   return (
       <div className='text-center mt-[120px] mb-[80px]'>
           <p className='text-[40px] font-medium text-white'>Download Qwid</p>

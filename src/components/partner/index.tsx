@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-type Props = {}
-
-const Partner = (props: Props) => {
+const Partner = () => {
   return (
-      <div className='text-center mt-[100px]'>
+      <div className='text-center mt-[100px] slide-out-to-left duration-300'>
           <div className='lg:w-[35%] w-[90%] mx-auto'>
           <p className='lg:text-[40px] text-[24px] font-bold text-white'>The Safest Payment Gateway For You and Your Business.</p>
           <p className='text-sm font-normal text-textColor mb-20 mt-4'>Safe, easy, and trusted payments for you and your business. We make every transaction smooth and secure.</p>

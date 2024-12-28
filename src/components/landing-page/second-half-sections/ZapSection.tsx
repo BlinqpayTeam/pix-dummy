@@ -1,27 +1,28 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
-import React, { useState } from 'react'
-import BlinqButton from '@/components/ui/BlinqButton';
-import useToolkit from '@/utils/hooks/useToolkit';
+import React from 'react'
+//import BlinqButton from '@/components/ui/BlinqButton';
+//import useToolkit from '@/utils/hooks/useToolkit';
 import SectionLabel from '@/components/ui/SectionLabel';
+import Image from 'next/image';
 
 
 const ZapSection = () => {
-   const [email, setEmail] = useState('');
-   const { toastError, toastSuccess } = useToolkit();
+   // const [email, setEmail] = useState('');
+   // const { toastError, toastSuccess } = useToolkit();
 
-   const isValidEmail = (email: string) => {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(email);
-   };
+   // const isValidEmail = (email: string) => {
+   //    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+   //    return emailRegex.test(email);
+   // };
 
-   const handleSubscription = () => {
-      if (!isValidEmail(email)) {
-         toastError('Please enter a valid email')
-      } else {
-         toastSuccess('Dummy toast message')
-      }
-   }
+   // const handleSubscription = () => {
+   //    if (!isValidEmail(email)) {
+   //       toastError('Please enter a valid email')
+   //    } else {
+   //       toastSuccess('Dummy toast message')
+   //    }
+   // }
 
 
    return (
@@ -39,10 +40,12 @@ const ZapSection = () => {
             </div>
 
             <div className="pt-12 lg:pt-32">
-               <img
+               <Image
                   alt="pos"
                   className='opacity-70 w-[300px] lg:w-[650px]'
                   src="/images/landing-page/zap-section/pos-terminal.svg"
+                  height={470}
+                  width={794}
                />
             </div>
          </div>
