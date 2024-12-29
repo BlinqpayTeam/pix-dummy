@@ -12,7 +12,7 @@ const Features = () => {
               <p>visit our website</p>
               <Image src="/images/chevron-right.svg" alt="chevron" width={14} height={14} />
           </div>
-          <div className="flex justify-center items-center mb-20 mt-20 relative bg-[url('/images/feature.svg')] h-[520px] bg-no-repeat bg-center bg-cover lg:bg-contain">
+          <div className="flex justify-center items-center mb-20 mt-20 relative bg-[url('/images/feature.png')] h-[520px] bg-no-repeat bg-center bg-cover lg:bg-contain">
               {/* <Image src="/images/feature.svg" alt="feature" height={520} width={580} /> */}
               <div className='absolute h-[10px] w-full bottom-0 shadow-[0_0px_50px_70px_rgba(1,1,15,1)] border-solid border bg-darkBlue border-darkBlue'/>
           </div>
