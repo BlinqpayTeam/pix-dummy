@@ -4,11 +4,14 @@ import NewsLetters from './NewsLetters'
 import BlogSection from './BlogSection'
 import ApiSection from './ApiSection'
 import ZapSection from './ZapSection'
+import CheckoutSection from './CheckoutSection'
 
 
 const SecondHalfSectionsWrapper = () => {
    return (
       <section className='w-full'>
+         <CheckoutSection />
+
          <ZapSection />
 
          <ApiSection />
