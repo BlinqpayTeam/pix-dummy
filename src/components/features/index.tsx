@@ -6,7 +6,7 @@ const Features = () => {
   return (
       <div className='text-center text-white pt-20 overflow-hidden'>
           <div className='text-white bg-cardBg rounded-3xl flex justify-center items-center w-[62px] mb-8 h-[36px] mx-auto'>Qwid</div>
-          <p className='text-white lg:text-[40px] text-[32px] font-medium w-[70%] lg:w-[20%] mx-auto'>Cross Border Payment Solution.</p>
+          <p className='text-white lg:text-[40px] text-[32px] font-medium w-[70%] lg:w-[45%] mx-auto'>Cross Border <br/>Payment Solution.</p>
           <p className='text-textColor lg:w-[23%] w-[90%] mt-2 mx-auto'>Make payments with multiple currencies across multiple countries, convert, hold, send and receive funds across borders in a few clicks.</p>
           <div className='text-darkGreen text-sm mt-6 flex justify-center items-center'>
               <p>visit our website</p>
