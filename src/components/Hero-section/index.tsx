@@ -2,6 +2,7 @@ import { cn } from '@/lib/utils'
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from '../ui/navigation-menu'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet'
 // import { slide as Menu } from 'react-burger-menu'
 
 
@@ -47,7 +48,28 @@ const HeroSectionMenu = ({menus}: Props) => {
           
       <div />
       <div className='lg:hidden'>
-        <Image src="/images/menu.svg" alt="menu" width={24} height={24} />
+      <Sheet >
+          <SheetTrigger>
+          <Image src="/images/menu.svg" alt="menu" width={24} height={24} />
+
+  </SheetTrigger>
+  <SheetContent side="left" className="border-0 pt-20 w-[100%] bg-darkBlue bg-[url('/images/bg.png')] bg-contain bg-no-repeat">
+    <SheetHeader>
+              <SheetTitle className='text-white text-left text-base font-medium flex items-center'>
+                <Image src="/images/logo.svg" alt="logo" width={18} height={18} />
+                <div className='ml-2'>Menu</div></SheetTitle>
+      <SheetDescription>
+                <ul>
+                  {menus.map(menu => (
+                    <li key={menu}>
+                      <div className='text-left text-white font-normal text-2xl mt-[16px]'>{menu}</div>
+                    </li>
+                  ))}
+         </ul>
+      </SheetDescription>
+    </SheetHeader>
+  </SheetContent>
+</Sheet>
         </div>
 
     </div>
