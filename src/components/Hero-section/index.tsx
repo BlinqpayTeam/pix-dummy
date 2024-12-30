@@ -3,6 +3,7 @@ import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMe
 import Image from 'next/image'
 import Link from 'next/link'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet'
+import Banner from '../Banner'
 // import { slide as Menu } from 'react-burger-menu'
 
 
@@ -53,13 +54,14 @@ const HeroSectionMenu = ({menus}: Props) => {
           <Image src="/images/menu.svg" alt="menu" width={24} height={24} />
 
   </SheetTrigger>
-  <SheetContent side="left" className="border-0 pt-20 w-[100%] bg-darkBlue bg-[url('/images/bg.png')] bg-contain bg-no-repeat">
+          <SheetContent side="left" className="border-0 p-0 w-[100%] bg-darkBlue bg-[url('/images/bg.png')] bg-contain bg-no-repeat">
+          <Banner />
     <SheetHeader>
-              <SheetTitle className='text-white text-left text-base font-medium flex items-center'>
+              <SheetTitle className='text-white text-left text-base font-medium flex items-center ml-[16px] mt-14 mb-5'>
                 <Image src="/images/logo.svg" alt="logo" width={18} height={18} />
                 <div className='ml-2'>Menu</div></SheetTitle>
       <SheetDescription>
-                <ul>
+                <ul className='ml-[16px]'>
                   {menus.map(menu => (
                     <li key={menu}>
                       <div className='text-left text-white font-normal text-2xl mt-[16px]'>{menu}</div>
