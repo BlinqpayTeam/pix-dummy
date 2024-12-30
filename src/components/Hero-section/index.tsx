@@ -18,19 +18,21 @@ const HeroSectionMenu = ({menus}: Props) => {
                   {menus.map(menu => (
                       menu.toLowerCase() === "products" ? <NavigationMenuItem key={menu} className='text-white bg-transparent  hover:bg-transparent'>
                           <NavigationMenuTrigger className='bg-transparent !hover:bg-transparent'>{menu}</NavigationMenuTrigger>
-                          <NavigationMenuContent>
+                          <NavigationMenuContent className='bg-darkBlue'>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <Link
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="flex !bg-darkBlue h-full text-white w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
                    hello
-                  </Link>
+                              </Link>
+                              
                 </NavigationMenuLink>
-              </li>
-             
+                
+                  </li>
+                          
             </ul>
           </NavigationMenuContent>
                           </NavigationMenuItem>
