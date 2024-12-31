@@ -33,14 +33,15 @@ const CheckoutSection = () => {
             </a>
          </div>
 
-         <div className="w-full relative pt-24 hidden lg:block">
+         <div className="w-full relative pt-24 hidden lg:flexed">
             <img
                alt="checkout-shot"
+               className='w-max'
                src="/images/landing-page/checkout-section/checkout-section-img.svg"
             />
          </div>
 
-         <div className="w-full relative pt-16 lg:hidden">
+         <div className="w-full relative pt-16 lg:hidden flexed">
             <img
                alt="checkout-shot"
                src="/images/landing-page/checkout-section/checkout-section-img-mobile.svg"
