@@ -33,34 +33,18 @@ const CheckoutSection = () => {
             </a>
          </div>
 
-         {/* PC */}
-         <div className="w-full relative pt-10 lg:pt-24 hidden lg:block">
-            <div className="relative">
-               <img
-                  alt="checkout-shot"
-                  src="/images/landing-page/checkout-section/checkout-section-img.svg"
-               />
-
-               <div className="bg-blg-dark-200 absolute py-8 flexed flex-col bottom-[280px] left-[47%] transform -translate-x-[47%]">
-                  <p className="mb-1.5 font-medium lg:text-xl">Checkout with ease</p>
-                  <p className="mb-0 text-xs text-blq-gray-300">Everything your business needs to accept payments and more</p>
-               </div>
-            </div>
+         <div className="w-full relative pt-24 hidden lg:block">
+            <img
+               alt="checkout-shot"
+               src="/images/landing-page/checkout-section/checkout-section-img.svg"
+            />
          </div>
 
-         {/* mobile */}
          <div className="w-full relative pt-16 lg:hidden">
-            <div className="relative">
-               <img
-                  alt="checkout-shot"
-                  src="/images/landing-page/checkout-section/checkout-section-img-mobile.svg"
-               />
-
-               <div className="bg-blg-dark-200 absolute text-center flexed flex-col bottom-[220px] left-1/2 transform -translate-x-1/2">
-                  <p className="mb-1.5 font-medium text-sm">Checkout with ease</p>
-                  <p className="mb-0 text-xs text-blq-gray-300">Everything your business needs to accept payments and more</p>
-               </div>
-            </div>
+            <img
+               alt="checkout-shot"
+               src="/images/landing-page/checkout-section/checkout-section-img-mobile.svg"
+            />
          </div>
       </div>
    )
