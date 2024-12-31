@@ -20,6 +20,14 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Blinqpay",
   description: "One platform, multiple solutions",
+  icons: {
+    icon: [
+      {
+        url: '/favicon.svg',
+        href: '/favicon.svg',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
