@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 import SectionLabel from '@/components/ui/SectionLabel'
 import BlinqButton from '@/components/ui/BlinqButton';
@@ -6,7 +7,7 @@ import { ChevronRight } from 'lucide-react';
 const CheckoutSection = () => {
 
    return (
-      <div className='bg-blg-dark-200 text-white pb-20 pt-14 flex items-center justify-center flex-col side-pad'>
+      <div className='bg-blg-dark-200 text-white pb-16 flex items-center justify-center flex-col side-pad'>
 
          <SectionLabel text="Blinq Checkout" />
 
@@ -30,6 +31,20 @@ const CheckoutSection = () => {
                   <ChevronRight size="1rem" />
                </span>
             </a>
+         </div>
+
+         <div className="w-full relative pt-24 hidden lg:block">
+            <img
+               alt="checkout-shot"
+               src="/images/landing-page/checkout-section/checkout-section-img.svg"
+            />
+         </div>
+
+         <div className="w-full relative pt-16 lg:hidden">
+            <img
+               alt="checkout-shot"
+               src="/images/landing-page/checkout-section/checkout-section-img-mobile.svg"
+            />
          </div>
       </div>
    )
