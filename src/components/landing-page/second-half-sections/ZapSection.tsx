@@ -47,10 +47,10 @@ const ZapSection = () => {
             <div className="pt-8 lg:pt-40">
                <img
                   alt="pos"
-                  className='opacity-70 w-[300px] lg:w-[650px]'
-                  src="/images/landing-page/zap-section/pos-terminal.svg"
-                  height={470}
                   width={794}
+                  height={470}
+                  className='w-[300px] lg:w-[650px]'
+                  src="/images/landing-page/zap-section/pos-terminal.svg"
                />
             </div>
 
