@@ -52,8 +52,8 @@ const ApiSection = () => {
                               whiteBg
                               extraPadding
                               text="Read API Docs"
-                              onClick={() => { }}
                               className='!rounded-3xl'
+                              onClick={() => window.open('https://docs.blinqpay.io', '_blank', 'noopener,noreferrer')}
                            />
                         </div>
                      </OptionalView>
