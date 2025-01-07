@@ -1,9 +1,15 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { RefObject } from 'react'
 
-const DownloadSection = () => {
+
+type Props = {
+  ref: RefObject<null>
+  isVisible: boolean
+}
+
+const DownloadSection = ({ref, isVisible}: Props) => {
   return (
-      <div className='text-center mt-[120px] mb-[80px]'>
+      <div ref={ref} className={`text-center mt-[120px] mb-[80px] transition-opacity ease-in duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>
           <p className='text-[40px] font-medium text-white'>Download Qwid</p>
           <p className='text-base font-normal text-textColor mb-[24px]'>Available on the App Store and Play Store</p>
           <div className='flex justify-center items-center'>

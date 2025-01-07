@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 const Banner = () => {
     return (
         <div className="bg-darkBlue bg-opacity-40 py-6 pl-4 lg:pl-0">
             <p className="text-center text-xs lg:text-sm font-medium text-white">
                 <span className="bg-lightGreen rounded-[500px] lg:p-2 p-1 rounded-[40%] mr-2 text-black">New</span>
-                Introducing Qwid, our cross border payment platform. <span className="underline">Sign up</span> now
+                Introducing Qwid, our cross border payment platform. <Link target="_blank" href="https://qwid.io/auth/signup" className="underline">Sign up</Link> now
             </p>
         </div>
     )

@@ -120,12 +120,12 @@ body {
 		@apply border border-red-500;
 	}
 
-      .flexed {
+  .flexed {
 		@apply flex items-center justify-center;
 	}
 
   .zap-section-overlay {
-height: 2136px;
+height: 2130px;
 background: linear-gradient(181.2deg, #000000 3.37%, rgba(0, 0, 0, 0) 8.16%, rgba(0, 0, 0, 0.25) 19.09%, #000000 37.95%, #000000 98.97%), linear-gradient(0deg, rgba(2, 2, 2, 0.9), rgba(2, 2, 2, 0.6)), url("/images/landing-page/zap-section/zap-bg-img.png"), #020202;
   }
 }

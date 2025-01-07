@@ -1,4 +1,4 @@
-type FooterLinkProps = { subtitle: string, url: string };
+type FooterLinkProps = { subtitle: string, url: string, target?: string };
 
 type FooterAddressProps = {
    title: string,
@@ -18,10 +18,10 @@ type QwidBlogType = {
    image: string;
    readTime: string;
    summary: string;
-   status: string;
-   tags: string[],
+   // status: string;
+   // tags: string[],
    createdAt: string;
-   updatedAt: string;
-   version: number,
+   // updatedAt: string;
+   // version: number,
    id: string;
 }

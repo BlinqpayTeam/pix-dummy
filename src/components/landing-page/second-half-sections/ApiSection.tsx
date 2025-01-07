@@ -14,12 +14,12 @@ const ApiSection = () => {
    ]
 
    return (
-      <div className='bg-blg-dark-200 text-white py-20 flex items-center justify-center flex-col side-pad'>
+      <div id="apis" className='bg-blg-dark-200 text-white pb-20 pt-10 flex items-center justify-center flex-col side-pad'>
 
          <SectionLabel text="APIs" />
 
          <p className="my-5 lg:my-7 text-3xl leading-10 lg:leading-[50px] lg:text-[38px] font-medium text-center">
-            Got a Startup Idea? <br /> We Got What You <br /> Need
+            Got a Startup Idea? <br /> We&#39;ve Got What You <br /> Need
          </p>
 
          <div className="text-blq-gray-300 text-plg lg:text-slg mb-8 lg:mb-12 text-center">
@@ -39,7 +39,7 @@ const ApiSection = () => {
          <div className="flex items-center justify-center lg:justify-between flex-wrap pt-8 lg:pt-12 space-y-10 lg:space-y-20">
             {apiShots.map((item: string, idx: number) => {
 
-               const allowButton = idx < 3;
+               const allowButton = idx === 1 || idx === 2;
 
                return (
                   <div key={idx} className={`h-[300px] lg:h-[380px] w-full relative ${allowButton ? 'lg:w-[47%]' : 'lg:w-[53%]'}`}>
@@ -52,8 +52,8 @@ const ApiSection = () => {
                               whiteBg
                               extraPadding
                               text="Read API Docs"
-                              onClick={() => { }}
                               className='!rounded-3xl'
+                              onClick={() => window.open('https://docs.blinqpay.io', '_blank', 'noopener,noreferrer')}
                            />
                         </div>
                      </OptionalView>
