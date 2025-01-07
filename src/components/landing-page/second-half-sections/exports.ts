@@ -43,9 +43,9 @@ const footerUsefulLinks: UsefulLinkProps[] = [
    {
       title: 'Products',
       children: [
-         { subtitle: 'Blinqcheckout', url: '#' },
+         { subtitle: 'Blinqcheckout', url: 'https://checkout-dash.blinqpay.io', target: '_blank' },
          { subtitle: 'Blinqchat', url: '#' },
-         { subtitle: 'Qwid', url: '#' },
+         { subtitle: 'Qwid', url: 'https://qwid.io', target: '_blank' },
          { subtitle: 'ZAP', url: '#' },
       ]
    },

@@ -1,17 +1,24 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { RefObject } from "react";
+import Link from "next/link";
 
-const HeroSection = () => {
+type Props = {
+  ref: RefObject<null>
+  isVisible: boolean
+}
+
+const HeroSection = ({ref, isVisible}: Props) => {
     return (
         <div className="text-white">
             <div className="lg:w-[45%] w-[90%] mx-auto text-center mt-10 lg:mt-0">
                 <div className="text-sm font-medium flex justify-center mb-3">
                         <Image src="/images/star.svg" alt="star" width={12} height={12} />
                     <p className="ml-2">One platform, multiple solutions</p></div>
-            <p className="lg:text-[80px] text-[32px] font-bold leading-[1.2] mb-3">CONNECTING YOU TO THE WORLD.</p>
-            <p className="lg:w-[75%] w-[90%] mx-auto text-sm lg:text-base">Your gateway to global payments, ecommerce integration, account management,
+            <p ref={ref} className={`lg:text-[80px] text-[32px] font-bold leading-[1.2] mb-3 transition-opacity ease-in duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>CONNECTING YOU TO THE WORLD.</p>
+            <p ref={ref} className={`lg:w-[75%] w-[90%] mx-auto text-sm lg:text-base transition-opacity ease-in duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>Your gateway to global payments, ecommerce integration, account management,
                 and multiple payment channels.</p>
-            <Button className="text-base font-normal bg-mediumBlue h-[48px] text-sm font-medium mt-10">Explore our Products</Button>
+            <Link href="#qwid"><Button className="text-base font-normal bg-mediumBlue hover:bg-mediumBlue h-[48px] text-sm font-medium mt-10">Explore our Products</Button></Link>
            </div>
             <div>
                 <Image
