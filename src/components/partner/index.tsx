@@ -9,7 +9,7 @@ type Props = {
 const Partner = ({ref, isVisible}: Props) => {
  
   return (
-    <div ref={ref} className={`text-center mt-[100px] transition-opacity ease-in duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+    <div id="partners" ref={ref} className={`text-center mt-[100px] transition-opacity ease-in duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>
           <div className='lg:w-[35%] w-[90%] mx-auto'>
           <p className='lg:text-[40px] text-[24px] font-bold text-white'>The Safest Payment Gateway For You and Your Business.</p>
           <p className='text-sm font-normal text-textColor mb-20 mt-4'>Safe, easy, and trusted payments for you and your business. We make every transaction smooth and secure.</p>

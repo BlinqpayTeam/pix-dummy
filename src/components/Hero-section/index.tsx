@@ -11,7 +11,16 @@ type Props = {
     menus: Array<string>
 }
 
-const HeroSectionMenu = ({menus}: Props) => {
+const HeroSectionMenu = ({ menus }: Props) => {
+  const handleUrlLink = (param: string) => {
+    if (param.toLowerCase() === 'company') {
+      return '#partners'
+    } else if (param.toLowerCase() === 'developers') { 
+      return 'https://docs.blinqpay.io/reference/introduction-1'
+    } else {
+      return '#aboutUs'
+    }
+  }
   return (
       <div className='flex justify-between items-center px-5 py-5 lg:px-20 lg:py-10'>
           <Image src="/logo/blinqpay.svg" alt="logo" width={82} height={18} />
@@ -26,9 +35,46 @@ const HeroSectionMenu = ({menus}: Props) => {
                 <NavigationMenuLink asChild>
                   <Link
                     className="flex !bg-darkBlue h-full text-white w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
+                    href="#qwid"
                   >
-                   hello
+                   Qwid
+                              </Link>
+                              
+                </NavigationMenuLink>
+                
+                          </li>
+                          <li className="row-span-3">
+                <NavigationMenuLink asChild>
+                  <Link
+                    className="flex !bg-darkBlue h-full text-white w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
+                    href="#blinqCheckout"
+                  >
+                   Blinq Checkout
+                              </Link>
+                              
+                </NavigationMenuLink>
+                
+                          </li>
+                          
+                          <li className="row-span-3">
+                <NavigationMenuLink asChild>
+                  <Link
+                    className="flex !bg-darkBlue h-full text-white w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
+                    href="#zap"
+                  >
+                   ZAP
+                              </Link>
+                              
+                </NavigationMenuLink>
+                
+                          </li>
+                          <li className="row-span-3">
+                <NavigationMenuLink asChild>
+                  <Link
+                    className="flex !bg-darkBlue h-full text-white w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
+                    href="#apis"
+                  >
+                   Apis
                               </Link>
                               
                 </NavigationMenuLink>
@@ -40,7 +86,11 @@ const HeroSectionMenu = ({menus}: Props) => {
                           </NavigationMenuItem>
                           : <NavigationMenuItem className={cn('text-white', {
                                   " !mr-4": menu.toLowerCase() === 'developers'
-                              })} key={menu}>{menu}</NavigationMenuItem>
+                          })} key={menu}>
+                        <Link href={handleUrlLink(menu)} target={menu.toLowerCase() === 'developers' ? '_blank' : '_self'}>
+                          {menu}
+                        </Link>
+                              </NavigationMenuItem>
                       
                   ))}
        

@@ -7,7 +7,7 @@ import { ChevronRight } from 'lucide-react';
 const CheckoutSection = () => {
 
    return (
-      <div className='bg-blg-dark-200 text-white pb-16 flex items-center justify-center flex-col side-pad'>
+      <div id="blinqCheckout" className='bg-blg-dark-200 text-white pb-16 flex items-center justify-center flex-col side-pad'>
 
          <SectionLabel text="Blinq Checkout" />
 

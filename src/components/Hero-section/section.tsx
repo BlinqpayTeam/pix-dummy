@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { RefObject } from "react";
+import Link from "next/link";
 
 type Props = {
   ref: RefObject<null>
@@ -17,7 +18,7 @@ const HeroSection = ({ref, isVisible}: Props) => {
             <p ref={ref} className={`lg:text-[80px] text-[32px] font-bold leading-[1.2] mb-3 transition-opacity ease-in duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>CONNECTING YOU TO THE WORLD.</p>
             <p ref={ref} className={`lg:w-[75%] w-[90%] mx-auto text-sm lg:text-base transition-opacity ease-in duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>Your gateway to global payments, ecommerce integration, account management,
                 and multiple payment channels.</p>
-            <Button className="text-base font-normal bg-mediumBlue h-[48px] text-sm font-medium mt-10">Explore our Products</Button>
+            <Link href="#qwid"><Button className="text-base font-normal bg-mediumBlue hover:bg-mediumBlue h-[48px] text-sm font-medium mt-10">Explore our Products</Button></Link>
            </div>
             <div>
                 <Image

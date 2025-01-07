@@ -1,4 +1,4 @@
-type FooterLinkProps = { subtitle: string, url: string };
+type FooterLinkProps = { subtitle: string, url: string, target?: string };
 
 type FooterAddressProps = {
    title: string,
