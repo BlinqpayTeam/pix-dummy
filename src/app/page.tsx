@@ -16,6 +16,7 @@ const menu = ["Company", "Products", "Developers", "About us"]
 //'bg-gradient-to-tr from-darkBlue from-60% via-mediumBlue to-darkBlue lg:bg-[center_top_-208px]
 const banks = ["Nigeria", "United States", "United Kingdom", "Canada", "China", "Europe", "Turkey", "Kenya"]
 export default function Home() {
+
   const ref1 = useRef(null);
   const isVisible1 = useIsVisible(ref1);
 

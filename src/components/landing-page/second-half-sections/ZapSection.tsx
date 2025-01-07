@@ -31,7 +31,7 @@ const ZapSection = () => {
    ]
 
    return (
-      <div className="w-full zap-section-overlay relative lg:bg-contain bg-no-repeat text-white">
+      <div id="zap" className="w-full zap-section-overlay relative lg:bg-contain bg-no-repeat text-white">
 
          <div className="absolute top-20 lg:top-28 w-full mx-auto flexed flex-col px-4 lg:px-0">
             <SectionLabel text="ZAP" />
@@ -47,10 +47,10 @@ const ZapSection = () => {
             <div className="pt-8 lg:pt-40">
                <img
                   alt="pos"
-                  className='opacity-70 w-[300px] lg:w-[650px]'
-                  src="/images/landing-page/zap-section/pos-terminal.svg"
-                  height={470}
                   width={794}
+                  height={470}
+                  className='w-[300px] lg:w-[650px]'
+                  src="/images/landing-page/zap-section/pos-terminal.svg"
                />
             </div>
 

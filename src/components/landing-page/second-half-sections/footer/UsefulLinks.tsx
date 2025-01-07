@@ -2,10 +2,11 @@ import Image from 'next/image'
 import React from 'react'
 import { footerUsefulLinks } from '../exports'
 import TermsAndPolicy from './TermsAndPolicy'
+import Link from 'next/link'
 
 const UsefulLinks = () => {
    return (
-      <div className="w-full">
+      <div id="aboutUs" className="w-full">
 
          <div className='w-full flex items-start justify-start lg:justify-between flex-wrap lg:flex-nowrap py-14'>
 
@@ -26,13 +27,13 @@ const UsefulLinks = () => {
                            {title}
                         </span>
 
-                        <div className='mt-5'>
-                           {children?.map(({ subtitle }: FooterLinkProps) => {
+                        <div className='mt-5 flex flex-col'>
+                           {children?.map(({ subtitle, url, target }: FooterLinkProps) => {
 
                               return (
-                                 <p key={subtitle} className="text-blq-gray-50 text-sm lg:text-plg mb-4 hover:scale-110 transition-transform cursor-pointer w-max">
+                                 <Link href={url} target={target || '_self'} key={subtitle} className="text-blq-gray-50 text-sm lg:text-plg mb-4 hover:scale-110 transition-transform cursor-pointer w-max">
                                     {subtitle}
-                                 </p>
+                                 </Link>
 
                               )
                            })}

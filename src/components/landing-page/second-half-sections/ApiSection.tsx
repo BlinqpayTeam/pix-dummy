@@ -14,7 +14,7 @@ const ApiSection = () => {
    ]
 
    return (
-      <div className='bg-blg-dark-200 text-white pb-20 pt-10 flex items-center justify-center flex-col side-pad'>
+      <div id="apis" className='bg-blg-dark-200 text-white pb-20 pt-10 flex items-center justify-center flex-col side-pad'>
 
          <SectionLabel text="APIs" />
 
@@ -52,8 +52,8 @@ const ApiSection = () => {
                               whiteBg
                               extraPadding
                               text="Read API Docs"
-                              onClick={() => { }}
                               className='!rounded-3xl'
+                              onClick={() => window.open('https://docs.blinqpay.io', '_blank', 'noopener,noreferrer')}
                            />
                         </div>
                      </OptionalView>
