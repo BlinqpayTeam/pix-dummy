@@ -3,6 +3,7 @@
 import SectionLabel from '@/components/ui/SectionLabel'
 import BlinqButton from '@/components/ui/BlinqButton';
 import OptionalView from '@/components/ui/OptionalView';
+import Link from 'next/link';
 
 const ApiSection = () => {
 
@@ -26,10 +27,10 @@ const ApiSection = () => {
             Take your product to market faster by integrating our <br /> APIs to poser your own operations.
          </div>
 
-         <BlinqButton
+         <Link href="https://docs.blinqpay.io/reference/introduction-1" target='_blank'><BlinqButton
             extraPadding
             text="Sign up"
-         />
+         /></Link>
 
          <p className="w-4/5 lg:w-3/6 my-7 text-3xl lg:text-[38px] leading-10 lg:leading-[50px] font-medium text-center mt-20 lg:mt-12">
             Get the financial tools you need for your fintech startup when you plug-in to Blinqpay&#39;s API solutions. Accept payments and manage transactions without having to build from scratch.
