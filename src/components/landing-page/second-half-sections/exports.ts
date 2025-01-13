@@ -52,8 +52,8 @@ const footerUsefulLinks: UsefulLinkProps[] = [
    {
       title: 'Developers',
       children: [
-         { subtitle: 'Guides', url: '#' },
-         { subtitle: 'Changelog', url: '#' },
+         // { subtitle: 'Guides', url: '#' },
+         // { subtitle: 'Changelog', url: '#' },
          { subtitle: 'API Docs', url: '#' },
       ]
    },
