@@ -35,15 +35,15 @@ const footerUsefulLinks: UsefulLinkProps[] = [
    {
       title: 'Company',
       children: [
-         { subtitle: 'About us', url: '#' },
-         { subtitle: 'The Team', url: '#' },
-         { subtitle: 'Careers', url: '#' },
+         { subtitle: 'About us', url: '#aboutUs' },
+         // { subtitle: 'The Team', url: '#' },
+         // { subtitle: 'Careers', url: '#' },
       ]
    },
    {
       title: 'Products',
       children: [
-         { subtitle: 'Blinqcheckout', url: 'https://checkout-dash.blinqpay.io', target: '_blank' },
+         { subtitle: 'Blinqcheckout', url: 'https://merchant.blinqpay.io', target: '_blank' },
          { subtitle: 'Blinqchat', url: '#' },
          { subtitle: 'Qwid', url: 'https://qwid.io', target: '_blank' },
          { subtitle: 'ZAP', url: '#' },
@@ -52,9 +52,9 @@ const footerUsefulLinks: UsefulLinkProps[] = [
    {
       title: 'Developers',
       children: [
-         { subtitle: 'Guides', url: '#' },
+         { subtitle: 'Guides', url: 'https://docs.blinqpay.io/reference/introduction-1', target: '_blank' },
          { subtitle: 'Changelog', url: '#' },
-         { subtitle: 'API Docs', url: '#' },
+         { subtitle: 'API Docs', url: 'https://docs.blinqpay.io/reference/introduction-1', target: '_blank' },
       ]
    },
    {
@@ -62,7 +62,7 @@ const footerUsefulLinks: UsefulLinkProps[] = [
       children: [
          { subtitle: 'Contact us', url: '#' },
          { subtitle: 'FAQs', url: '#' },
-         { subtitle: 'Blog', url: '#' },
+         { subtitle: 'Blog', url: 'https://qwid.io/blog', target: '_blank' },
       ]
    },
 ]
