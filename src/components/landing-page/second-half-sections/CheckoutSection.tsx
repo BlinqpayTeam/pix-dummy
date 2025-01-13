@@ -3,6 +3,7 @@
 import SectionLabel from '@/components/ui/SectionLabel'
 import BlinqButton from '@/components/ui/BlinqButton';
 import { ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 
 const CheckoutSection = () => {
 
@@ -20,10 +21,10 @@ const CheckoutSection = () => {
          </div>
 
          <div className="flexed">
-            <BlinqButton
+           <Link href="https://checkout-dash.blinqpay.io/login" target="_blank"> <BlinqButton
                extraPadding
                text="Sign up"
-            />
+            /></Link>
 
             <a href='#' target="_blank" rel="noreferrer" className='text-white ml-5 flex items-center text-sm lg:text-base'>
                Learn more&nbsp;
