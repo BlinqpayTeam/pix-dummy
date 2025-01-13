@@ -52,8 +52,8 @@ const footerUsefulLinks: UsefulLinkProps[] = [
    {
       title: 'Developers',
       children: [
-         { subtitle: 'Guides', url: 'https://docs.blinqpay.io/reference/introduction-1', target: '_blank' },
-         { subtitle: 'Changelog', url: '#' },
+         // { subtitle: 'Guides', url: 'https://docs.blinqpay.io/reference/introduction-1', target: '_blank' },
+         // { subtitle: 'Changelog', url: '#' },
          { subtitle: 'API Docs', url: 'https://docs.blinqpay.io/reference/introduction-1', target: '_blank' },
       ]
    },

@@ -16,6 +16,35 @@ const UsefulLinks = () => {
                <p className="mb-0 text-justify mt-3 text-sm lg:text-plg text-blq-gray-50 lg:pr-4">
                   Blinqpay is a global financial technology company with the aim to be a one-stop shop for individuals and businesses that need to make payments either online or in-person. We offer online payment solutions on both web and mobile platforms.
                </p>
+
+               <div className="space-y-3 mt-5">
+
+                  <div className="flex items-center space-x-2">
+                     <Image
+                        alt="logo"
+                        width={20}
+                        height={20}
+                        src="/images/footer/contact-mail.svg"
+                     />
+
+                     <a href="mailto:contact@blinqpay.io" className="text-white">
+                        contact@blinqpay.io
+                     </a>
+                  </div>
+
+                  <div className="flex items-center space-x-2">
+                     <Image
+                        alt="logo"
+                        width={20}
+                        height={20}
+                        src="/images/footer/contact-phone.svg"
+                     />
+
+                     <a href="tel:+2347061751041" className="text-white">
+                        (+234) 706 175 1041
+                     </a>
+                  </div>
+               </div>
             </div>
 
             <div className="w-full lg:w-[40%] flex items-start justify-between flex-wrap lg:flex-nowrap pt-10 lg:pt-0">
