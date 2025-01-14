@@ -46,7 +46,7 @@ const footerUsefulLinks: UsefulLinkProps[] = [
          { subtitle: 'Blinqcheckout', url: 'https://merchant.blinqpay.io', target: '_blank' },
          { subtitle: 'Blinqchat', url: '#' },
          { subtitle: 'Qwid', url: 'https://qwid.io', target: '_blank' },
-         { subtitle: 'ZAP', url: '#' },
+         { subtitle: 'ZAP', url: '/#zap' },
       ]
    },
    {
@@ -60,7 +60,7 @@ const footerUsefulLinks: UsefulLinkProps[] = [
    {
       title: 'Support',
       children: [
-         { subtitle: 'Contact us', url: '#' },
+         // { subtitle: 'Contact us', url: '#' },
          { subtitle: 'FAQs', url: '#' },
          { subtitle: 'Blog', url: 'https://qwid.io/blog', target: '_blank' },
       ]
