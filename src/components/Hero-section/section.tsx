@@ -9,6 +9,10 @@ type Props = {
 
 const HeroSection = ({ ref, isVisible }: Props) => {
 
+    const handleRoute = () => {
+        window.parent.location.href = 'https://qwid.io'
+    }
+
     return (
         <div className="text-white">
             <div className="lg:w-[45%] w-[90%] mx-auto text-center mt-10 lg:mt-0">
@@ -22,7 +26,7 @@ const HeroSection = ({ ref, isVisible }: Props) => {
                     Your gateway to global payments, ecommerce integration, account management,
                     and multiple payment channels.
                 </p>
-                <Button onClick={() => window.location.assign('https://qwid.io')}
+                <Button onClick={handleRoute}
                     className="font-normal bg-mediumBlue hover:bg-mediumBlue h-[48px] text-sm mt-10">
                     Reroute to Qwid
                 </Button>
