@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { RefObject } from "react";
-import Link from "next/link";
 
 type Props = {
     ref: RefObject<null>
@@ -9,6 +8,7 @@ type Props = {
 }
 
 const HeroSection = ({ ref, isVisible }: Props) => {
+
     return (
         <div className="text-white">
             <div className="lg:w-[45%] w-[90%] mx-auto text-center mt-10 lg:mt-0">
@@ -22,9 +22,11 @@ const HeroSection = ({ ref, isVisible }: Props) => {
                     Your gateway to global payments, ecommerce integration, account management,
                     and multiple payment channels.
                 </p>
-                <Link href="#qwid"><Button className="font-normal bg-mediumBlue hover:bg-mediumBlue h-[48px] text-sm mt-10">
+                <Button onClick={() => window.location.assign('https://qwid.io')}
+                    className="font-normal bg-mediumBlue hover:bg-mediumBlue h-[48px] text-sm mt-10">
                     Reroute to Qwid
-                </Button></Link>
+                </Button>
+
             </div>
             <div>
                 <Image
