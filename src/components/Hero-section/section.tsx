@@ -10,7 +10,7 @@ type Props = {
 const HeroSection = ({ ref, isVisible }: Props) => {
 
     const handleRoute = () => {
-        window.parent.location.href = 'https://qwid.io'
+        window.location.href = 'https://qwid.io'
     }
 
     return (
