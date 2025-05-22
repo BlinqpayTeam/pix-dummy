@@ -9,26 +9,31 @@ type Props = {
 
 const HeroSection = ({ ref, isVisible }: Props) => {
 
-    const handleRoute = () => {
-        window.location.href = 'https://qwid.io'
-    }
+    const handleSimulate = () => {
+        const triggerBtn = document.getElementById('blq-btn');
+        if (triggerBtn) triggerBtn.click();
+        else alert('Payment button not loaded');
+    };
+
 
     return (
         <div className="text-white">
             <div className="lg:w-[45%] w-[90%] mx-auto text-center mt-10 lg:mt-0">
                 <div className="text-sm font-medium flex justify-center mb-3">
                     <Image src="/images/star.svg" alt="star" width={12} height={12} />
-                    <p className="ml-2">One platform, multiple solutions</p></div>
-                <p ref={ref} className={`lg:text-[80px] text-[32px] font-bold leading-[1.2] mb-3 transition-opacity ease-in duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>CONNECTING YOU TO THE WORLD.</p>
+                    <p className="ml-2">One platform, multiple payment options</p></div>
+                <p ref={ref} className={`lg:text-[80px] text-[32px] font-bold leading-[1.2] mb-3 transition-opacity ease-in duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+                    OPTIMIZE YOUR CHECKOUT EXPERIENCE
+                </p>
 
-                <p ref={ref} className={`lg:w-[75%] w-[90%] mx-auto text-sm lg:text-base transition-opacity ease-in duration-700 
+                {/* <p ref={ref} className={`lg:w-[75%] w-[90%] mx-auto text-sm lg:text-base transition-opacity ease-in duration-700 
                 ${isVisible ? "opacity-100" : "opacity-0"}`}>
                     Your gateway to global payments, ecommerce integration, account management,
                     and multiple payment channels.
-                </p>
-                <Button onClick={handleRoute}
-                    className="font-normal bg-mediumBlue hover:bg-mediumBlue h-[48px] text-sm mt-10">
-                    Reroute to Qwid
+                </p> */}
+                <Button onClick={handleSimulate}
+                    className="font-normal bg-mediumBlue hover:bg-mediumBlue h-[48px] text-sm mt-10 animate-pulse">
+                    Begin Simulation
                 </Button>
 
             </div>

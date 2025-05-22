@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local"
 import "./globals.css";
 import CustomToast from "@/components/ui/toast/CustomToast";
+import SimulateButton from "@/components/ui/SimulateButton";
 
 const geistSans = localFont({
   src: "./fonts/CreatoDisplay-Regular.otf",
@@ -38,8 +39,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.className} ${geistMono.className} antialiased`}>
+        <SimulateButton />
         {children}
-
         <CustomToast />
       </body>
     </html>
